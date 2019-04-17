@@ -1,6 +1,5 @@
 package org.nuxeo.ecm.operations;
 
-import org.nuxeo.ecm.automation.core.Constants;
 import org.nuxeo.ecm.automation.core.annotations.Context;
 import org.nuxeo.ecm.automation.core.annotations.Operation;
 import org.nuxeo.ecm.automation.core.annotations.OperationMethod;
@@ -14,7 +13,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 /**
  *
  */
-@Operation(id=CheckProxyExistence.ID, category="LiveProxy", label="Check proxy existence", description="Checks if the document has any proxy(ies).")
+@Operation(id = CheckProxyExistence.ID, category = "LiveProxy", label = "Check proxy existence", description = "Checks if the document has any proxy(ies).")
 public class CheckProxyExistence {
 
     public static final String ID = "LiveProxy.CheckProxyExistence";
@@ -58,13 +57,11 @@ public class CheckProxyExistence {
 
         if (proxies == null) {
             return false;
-        }
-        else {
+        } else {
             if (doc.isProxy()) {
                 // If the document is a proxy itself, it will be within the DocumentModelList, so only return true if there is another element in it
                 return proxies.size() > 1;
-            }
-            else {
+            } else {
                 return !proxies.isEmpty();
             }
         }

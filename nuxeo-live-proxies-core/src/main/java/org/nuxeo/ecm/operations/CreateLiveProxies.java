@@ -1,7 +1,5 @@
 package org.nuxeo.ecm.operations;
 
-import org.apache.commons.lang3.StringUtils;
-import org.nuxeo.ecm.automation.core.Constants;
 import org.nuxeo.ecm.automation.core.annotations.Context;
 import org.nuxeo.ecm.automation.core.annotations.Operation;
 import org.nuxeo.ecm.automation.core.annotations.OperationMethod;
@@ -13,12 +11,11 @@ import org.nuxeo.ecm.core.api.DocumentModelList;
 import org.nuxeo.ecm.core.api.DocumentRef;
 import org.nuxeo.ecm.core.api.IdRef;
 import org.nuxeo.ecm.core.api.NuxeoException;
-import org.nuxeo.ecm.core.api.PathRef;
 
 /**
  *
  */
-@Operation(id=CreateLiveProxies.ID, category="LiveProxy", label="Create live proxies", description="Create one or several live proxies for one or several destinations.")
+@Operation(id = CreateLiveProxies.ID, category = "LiveProxy", label = "Create live proxies", description = "Create one or several live proxies for one or several destinations.")
 public class CreateLiveProxies {
 
     public static final String ID = "LiveProxy.CreateLiveProxies";

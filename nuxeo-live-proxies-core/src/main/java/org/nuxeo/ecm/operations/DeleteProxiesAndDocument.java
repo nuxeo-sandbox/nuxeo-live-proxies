@@ -15,7 +15,7 @@ import org.nuxeo.ecm.core.api.UnrestrictedSessionRunner;
 /**
  *
  */
-@Operation(id = DeleteDocument.ID, category = Constants.CAT_DOCUMENT, label="Delete proxies and document", description="Delete all" +
+@Operation(id = DeleteDocument.ID, category = Constants.CAT_DOCUMENT, label = "Delete proxies and document", description = "Delete all" +
         " proxies of a document then delete the document. Note that it will delete proxies regardless of user permissions on them," +
         " as long as the user can delete the source Document.")
 public class DeleteProxiesAndDocument {
