@@ -1,0 +1,11 @@
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Manifest-Version: 1.0
+Bundle-Vendor: org.nuxeo.ecm.proxy
+Bundle-Version: 1.0.0
+Bundle-Name: nuxeo-live-proxies-core
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.nuxeo.ecm.proxy.nuxeo-live-proxies-core;singleton=true
+Nuxeo-Component: OSGI-INF/createliveproxies-operation-contrib.xml,
+ OSGI-INF/checkproxyexistence-operation-contrib.xml,
+ OSGI-INF/deleteproxiesanddocument-operation-contrib.xml
